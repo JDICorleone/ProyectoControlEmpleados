@@ -1,7 +1,13 @@
+using ControlEmpleados.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<ControlEmpleadosContext>(opciones =>
+    opciones.UseSqlServer(builder.Configuration.GetConnectionString("ControlEmpleadosContext")));
 
 var app = builder.Build();
 
