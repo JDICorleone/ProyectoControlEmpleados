@@ -97,6 +97,10 @@
       "PackagePath": "staticwebassets\\img\\avatar.png"
     },
     {
+      "Id": "D:\\Universidad\\7 Cuatrimestre\\Programación Avanzada en Web\\Proyecto\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\sce-favicon.png",
+      "PackagePath": "staticwebassets\\img\\sce-favicon.png"
+    },
+    {
       "Id": "D:\\Universidad\\7 Cuatrimestre\\Programación Avanzada en Web\\Proyecto\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\sce-white-1.png",
       "PackagePath": "staticwebassets\\img\\sce-white-1.png"
     },

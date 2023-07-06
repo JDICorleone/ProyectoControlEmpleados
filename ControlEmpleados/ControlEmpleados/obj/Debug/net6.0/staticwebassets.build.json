@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CUhbJomHuR3X7ACkZCL+9t03dYpmMiV2aVjdY/rderE=",
+  "Hash": "FffBGhtUCTC+n/jzCSOjHEu7Crya7WqorSBvPLHrVjs=",
   "Source": "ControlEmpleados",
   "BasePath": "_content/ControlEmpleados",
   "Mode": "Default",
@@ -440,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\avatar.png"
+    },
+    {
+      "Identity": "D:\\Universidad\\7 Cuatrimestre\\Programación Avanzada en Web\\Proyecto\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\sce-favicon.png",
+      "SourceId": "ControlEmpleados",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Universidad\\7 Cuatrimestre\\Programación Avanzada en Web\\Proyecto\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\",
+      "BasePath": "_content/ControlEmpleados",
+      "RelativePath": "img/sce-favicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\sce-favicon.png"
     },
     {
       "Identity": "D:\\Universidad\\7 Cuatrimestre\\Programación Avanzada en Web\\Proyecto\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\sce-white-1.png",
