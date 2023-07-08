@@ -9,6 +9,6 @@ namespace ControlEmpleados.Models
         {
         }
         //Entidades o las tables de la DB
-        public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<Empleado> Empleado { get; set; }
     }
 }
