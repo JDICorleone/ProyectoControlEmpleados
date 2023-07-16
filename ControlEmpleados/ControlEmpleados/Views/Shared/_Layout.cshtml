@@ -45,7 +45,14 @@
                                     <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
                                 </ul>
                             </li>
-                            <li><a asp-area="" asp-controller="Empleado" asp-action="Index"><i class="fa fa-users"></i> <span>Empleados</span></a></li>
+                            <li><a asp-area="" asp-controller="Empleado" asp-action="Index"><i class="ti-user"></i> <span>Empleados</span></a></li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-users"></i><span>Usuarios</span></a>
+                                <ul class="collapse">
+                                    <li><a asp-area="" asp-controller="Usuario" asp-action="Index">Home</a></li>
+                                    <li><a asp-area="" asp-controller="Usuario" asp-action="Login">Login</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                 </div>
