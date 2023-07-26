@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ControlEmpleados</title>
+
     <link rel="shortcut icon" type="image/png" href="~/img/sce-favicon.png">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -45,12 +46,16 @@
                                     <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
                                 </ul>
                             </li>
-                            <li><a asp-area="" asp-controller="Empleado" asp-action="Index"><i class="ti-user"></i> <span>Empleados</span></a></li>
+                            @{
+                                if (Context.Session.GetString("ADMIN") != null)
+                                {
+                                    <li><a asp-area="" asp-controller="Empleados" asp-action="ConsultarEmpleados"><i class="ti-user"></i> <span>Empleados</span></a></li>
+                                }
+                            }
                             <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-users"></i><span>Usuarios</span></a>
                                 <ul class="collapse">
-                                    <li><a asp-area="" asp-controller="Usuario" asp-action="Index">Home</a></li>
-                                    <li><a asp-area="" asp-controller="Usuario" asp-action="Login">Login</a></li>
+                                    <li><a asp-area="" asp-controller="Usuarios" asp-action="Index">Home</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -92,41 +97,7 @@
                                                 <span>30 Seconds ago</span>
                                             </div>
                                         </a>
-                                        <a href="#" class="notify-item">
-                                            <div class="notify-thumb"><i class="ti-key btn-primary"></i></div>
-                                            <div class="notify-text">
-                                                <p>Some special like you</p>
-                                                <span>Just Now</span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="notify-item">
-                                            <div class="notify-thumb"><i class="ti-comments-smiley btn-info"></i></div>
-                                            <div class="notify-text">
-                                                <p>New Commetns On Post</p>
-                                                <span>30 Seconds ago</span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="notify-item">
-                                            <div class="notify-thumb"><i class="ti-key btn-primary"></i></div>
-                                            <div class="notify-text">
-                                                <p>Some special like you</p>
-                                                <span>Just Now</span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="notify-item">
-                                            <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
-                                            <div class="notify-text">
-                                                <p>You have Changed Your Password</p>
-                                                <span>Just Now</span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="notify-item">
-                                            <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
-                                            <div class="notify-text">
-                                                <p>You have Changed Your Password</p>
-                                                <span>Just Now</span>
-                                            </div>
-                                        </a>
+
                                     </div>
                                 </div>
                             </li>
@@ -148,11 +119,15 @@
                         </div>
                     </div>
                     <div class="col-sm-6 clearfix">
-                        <div class="user-profile pull-right">
+                        @{
+                            string Correo = Context.Session.GetString("CORREO");
+                        }
+
+                        <div class="user-profile pull-right" style="border-top-left-radius: 15px; border-bottom-left-radius: 15px;">
                             <img class="avatar user-thumb" src="~/img/avatar.png" />
-                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Administrador <i class="fa fa-angle-down"></i></h4>
+                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">@Correo <i class="fa fa-angle-down"></i></h4>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                                <a class="dropdown-item" href="@Url.Action("Login", "Home")">Cerrar Sesión</a>
                             </div>
                         </div>
                     </div>
@@ -180,16 +155,16 @@
         </footer>
         <!-- footer area end-->
     </div>
-    
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
     <script src="~/js/popper.min.js"></script>
-    
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    
+
     <script src="~/js/owl.carousel.min.js"></script>
     <script src="~/js/metismenu.min.js"></script>
     <script src="~/js/jquery.slimscroll.min.js"></script>
@@ -202,6 +177,7 @@
     <!-- others plugins -->
     <script src="~/js/plugins.js"></script>
     <script src="~/js/scripts.js"></script>
+
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

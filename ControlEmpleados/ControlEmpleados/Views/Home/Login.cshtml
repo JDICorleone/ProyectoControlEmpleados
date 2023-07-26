@@ -1,0 +1,70 @@
+﻿@model ControlEmpleados.Entities.Usuario
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+    Layout = "_Login";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<form asp-action="Login" class="login-form-body">
+    <div class="login-form-head">
+        <img class="mb-4" src="~/img/sce-1.png" />
+        <h4>Iniciar Sesión</h4>
+    </div>
+    <div class="form-gp">
+        <label for="correoLogin">Correo Electrónico</label>
+        <i class="ti-email"></i>
+        <input asp-for="CORREO" type="email" id="correoLogin" class="form-control">
+    
+        <div class="text-danger">@Html.ValidationMessageFor(m => m.CORREO)</div>
+    </div>
+    <div class="form-gp">
+        <label for="passwordLogin">Contraseña</label>
+        <i class="ti-lock"></i>
+        <input asp-for="PASSWORD" type="password" id="passwordLogin" class="form-control">
+       
+        <div class="text-danger">@Html.ValidationMessageFor(m => m.PASSWORD)</div>
+    </div>
+    <div class="row mb-4 rmber-area">
+        <div class="col-12 text-center">
+            <a href="@Url.Action("RecuperarContrasenna", "Home")">Recuperar contraseña</a>
+        </div>
+    </div>
+    <div class="submit-btn-area">
+        <button id="form_submit" type="submit">Iniciar Sesión <i class="ti-arrow-right"></i></button>
+
+        @{
+            if (@ViewBag.mensaje == "Alerta")
+            {
+                @Html.Raw("<script> $(document).ready(function() {\r\n         alertaLogin();\r\n      });       </script>")
+                ;
+
+            }
+        }
+    </div>
+</form>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+  <script>
+
+    function alertaLogin() {
+
+        Swal.fire({
+            position: 'top-center',
+            icon: 'error',
+            title: 'Correo o contraseña no validos.',
+            text: 'Por favor verifique que sus credenciales estén correctas.',
+            showConfirmButton: true
+        })
+
+        let Correo = $("#correoLogin").val("");
+    }
+
+
+  </script>
