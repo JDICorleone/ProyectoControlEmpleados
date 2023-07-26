@@ -2,18 +2,12 @@
 
 namespace ControlEmpleados.Controllers
 {
-    public class UsuarioController : Controller
+    public class UsuariosController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
-
-        public IActionResult Login()
-        {
-            return View();
-        }
-
 
     }
 }

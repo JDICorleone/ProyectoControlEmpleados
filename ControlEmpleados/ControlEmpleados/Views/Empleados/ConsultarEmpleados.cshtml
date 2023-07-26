@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ControlEmpleados.Entities.Empleado>
+@{
+    ViewData["Title"] = "Empleados";
+}
+
+<div class="row">
+
+    <div class="col-md-1 grid-margin stretch-card">
+    </div>
+
+    <div class="col-md-10 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title text-center">Empleados</h4>
+                <br />
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th class="text-center">#</th>
+                            <th class="text-center">Nombre</th>
+                            <th class="text-center">Cédula</th>
+                            <th class="text-center">Pago/Hora</th>
+                            <th class="text-center">Vaciones</th>
+                            <th class="text-center">Fecha Ingreso</th>
+                            <th class="text-center">Horario</th>
+                            <th class="text-center">Periodo/Pago</th>
+                            <th class="text-center">Puesto</th>
+                            <th class ="text-center">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+
+                            <tr>
+                                <td class="text-center">@item.ID_EMPLEADO</td>
+                                <td class="text-center">@item.NOMBRE @item.PRIMER_APELLIDO @item.SEGUNDO_APELLIDO</td>
+                                <td class="text-center">@item.CEDULA</td>
+                                <td class="text-center">@item.PAGO_POR_HORA</td>
+                                <td class="text-center">@item.VACACIONES_DISPONIBLES</td>
+                                <td class="text-center">@item.FECHA_DE_INGRESO.ToString("dd/MM/yyyy")</td>
+                                <td class="text-center">@item.HORARIO</td>
+                                <td class="text-center">@item.PERIODO_DE_PAGO</td>
+                                <td class="text-center">@item.NOMBRE_PUESTO</td>
+                                <td class="text-center">@item.ESTADO</td>
+
+
+                            </tr>
+
+
+
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
