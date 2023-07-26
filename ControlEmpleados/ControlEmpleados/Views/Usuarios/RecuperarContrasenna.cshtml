@@ -1,0 +1,62 @@
+﻿@model ControlEmpleados.Entities.Usuario
+@{
+    ViewData["Title"] = "Recuperar Contraseña";
+    Layout = "_Login";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<form asp-action="RecuperarContrasenna" asp-controller="Usuarios" class="login-form-body">
+    <div class="login-form-head">
+        <img class="mb-4" src="~/img/sce-1.png" />
+        <h4>Recuperación de contraseña</h4>
+        <p>Digite su correo eletrónico</p>
+    </div>
+    <div class="form-gp">
+        <label for="correoLogin">Correo Electrónico</label>
+        <i class="ti-email"></i>
+        <input asp-for="CORREO" type="email" id="correoLogin" class="form-control" required>
+
+        <div class="text-danger">@Html.ValidationMessageFor(m => m.CORREO)</div>
+    </div>
+   
+    <div class="submit-btn-area">
+        <button id="form_submit" type="submit">Enviar</button>
+
+        @{
+            if (@ViewBag.mensaje == "Alerta")
+            {
+                @Html.Raw("<script> $(document).ready(function() {\r\n         alerta();\r\n      });       </script>")
+                ;
+
+            }
+        }
+    </div>
+</form>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+
+    function alerta() {
+
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Petición enviada',
+            text: 'Se le a enviado un correo eletrónico con su contraseña actual, por favor revise su bandeja de entrada.',
+        })
+         setTimeout(function () {
+            window.location.href = "/Home/Login";
+        }, 6000);
+
+        let Correo = $("#correoLogin").val("");
+    }
+
+
+</script>

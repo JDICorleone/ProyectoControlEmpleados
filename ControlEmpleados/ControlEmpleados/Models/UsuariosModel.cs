@@ -41,6 +41,17 @@ namespace ControlEmpleados.Models
             }
         }
 
+        public void RecuperarContrasenna(Usuario entidad)
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Login/RecuperarContrasenna";
+
+
+                JsonContent body = JsonContent.Create(entidad);
+                HttpResponseMessage response = client.PostAsync(urlApi, body).Result;
+            }
+        }
 
     }
 }
