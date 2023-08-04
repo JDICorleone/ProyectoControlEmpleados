@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<ControlEmpleados.Entities.Planilla>
 @{
     ViewData["Title"] = "Planillas";
+
 }
 
 <div class="row">
@@ -31,7 +32,7 @@
 
                             <tr>
                                 <td class="text-center">@item.ID_PLANILLA</td>
-                                <td class="text-center">@item.FECHA </td>
+                                <td class="text-center">@item.FECHA.ToString("dd/MM/yyyy") </td>
                                 <td class="text-center">@item.ID_EMPLEADO</td>
                                 <td class="text-center">@item.HORAS_EXTRAS</td>
                                 <td class="text-center">@item.DEDUCCIONES</td>
