@@ -2,13 +2,15 @@
 using ControlEmpleados.Interfaces;
 using ControlEmpleados.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ControlEmpleados.Controllers
 {
-    public class PlanillaController : Controller
+    public class PlanillasController : Controller
     {
         private readonly IPlanillasModel _planillasModel;
-        public PlanillaController(IPlanillasModel planillasModel)
+
+        public PlanillasController(IPlanillasModel planillasModel)
         {
             _planillasModel = planillasModel;
         }
