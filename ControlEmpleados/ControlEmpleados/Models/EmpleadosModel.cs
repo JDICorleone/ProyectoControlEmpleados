@@ -1,4 +1,5 @@
-﻿using ControlEmpleados.Entities;
+﻿using ControlEmpleados.Consults;
+using ControlEmpleados.Entities;
 using ControlEmpleados.Interfaces;
 using Microsoft.Extensions.Configuration;
 using System.Net.Http.Headers;
@@ -17,7 +18,7 @@ namespace ControlEmpleados.Models
             _contextAccessor = contextAccessor;
         }
 
-        public List<Empleado>? ConsultarEmpleados()
+        public List<ConsultarEmpleados>? ConsultarEmpleados()
         {
             using (var client = new HttpClient())
             {
@@ -26,12 +27,12 @@ namespace ControlEmpleados.Models
                 HttpResponseMessage response = client.GetAsync(urlApi).Result;
 
                 if (response.IsSuccessStatusCode)
-                    return response.Content.ReadFromJsonAsync<List<Empleado>>().Result;
+                    return response.Content.ReadFromJsonAsync<List<ConsultarEmpleados>>().Result;
 
                 if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
                     throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
 
-                return new List<Empleado>();
+                return new List<ConsultarEmpleados>();
             }
         }
 

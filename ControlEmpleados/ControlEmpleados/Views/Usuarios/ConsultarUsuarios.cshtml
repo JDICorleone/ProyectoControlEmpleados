@@ -1,6 +1,6 @@
-﻿@model IEnumerable<ControlEmpleados.Consults.ConsultarEmpleados>
+﻿@model IEnumerable<ControlEmpleados.Consults.ConsultarUsuarios>
 @{
-    ViewData["Title"] = "Empleados";
+    ViewData["Title"] = "Usuarios";
 }
 
 <div class="row">
@@ -11,22 +11,15 @@
     <div class="col-md-10 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title text-center">Empleados</h4>
+                <h4 class="card-title text-center">Usuarios</h4>
                 <br />
                 <table class="table table-responsive" id="TablaConsultas">
                     <thead>
                         <tr>
                             <th class="text-center">#</th>
-                            <th class="text-center">Nombre</th>
-                            <th class="text-center">Cédula</th>
-                            <th class="text-center">Pago/Hora</th>
-                            <th class="text-center">Vaciones</th>
-                            <th class="text-center">Fecha Ingreso</th>
-                            <th class="text-center">Horario</th>
-                            <th class="text-center">Periodo/Pago</th>
-                            <th class="text-center">Puesto</th>
-                            <th class ="text-center">Estado</th>
-                            <th class ="text-center">Editar</th>
+                            <th class="text-center">Correo electrónico</th>
+                            <th class="text-center">Rol</th>
+                            <th class="text-center">Editar</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,28 +28,9 @@
                         {
 
                             <tr>
-                                <td class="text-center">@item.ID_EMPLEADO</td>
-                                <td class="text-center">@item.NOMBRE @item.PRIMER_APELLIDO @item.SEGUNDO_APELLIDO</td>
-                                <td class="text-center">@item.CEDULA</td>
-                                <td class="text-center">@item.PAGO_POR_HORA</td>
-                                <td class="text-center">@item.VACACIONES_DISPONIBLES</td>
-                                <td class="text-center">@item.FECHA_DE_INGRESO.ToString("dd/MM/yyyy")</td>
-                                <td class="text-center">@item.HORARIO</td>
-                                <td class="text-center">@item.PERIODO_DE_PAGO</td>
-                                <td class="text-center">@item.NOMBRE_PUESTO</td>
-
-                                @if (@item.ESTADO == "ACTIVO")
-                                {
-                                    <td class="text-center" style="color: green">@item.ESTADO</td>
-                                }
-                                else if (@item.ESTADO == "INACTIVO")
-                                {
-                                    <td class="text-center" style="color: red">@item.ESTADO</td>
-                                }
-                                else
-                                {
-                                    <td class="text-center">@item.ESTADO</td>
-                                }
+                                <td class="text-center">@item.ID_USUARIO</td>
+                                <td class="text-center">@item.CORREO</td>
+                                <td class="text-center">@item.ROL</td>
 
                                 <td>
                                     <a href="#">
@@ -119,7 +93,7 @@
     var BtnAgregar = {
         text: 'Agregar',
         action: function (e, dt, node, config) {
-            //agregarEmpleado(0);
+            window.location.href = "/Usuarios/AgregarUsuario";
         }
     };
 
@@ -137,7 +111,7 @@
             .appendTo('#TablaConsultas_wrapper .col-md-6:eq(0)');
     });
 
-
+ 
 </script>
 
 
