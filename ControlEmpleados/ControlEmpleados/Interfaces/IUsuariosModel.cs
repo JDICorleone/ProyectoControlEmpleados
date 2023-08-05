@@ -6,5 +6,6 @@ namespace ControlEmpleados.Interfaces
     {
 
         public Usuario? ValidarUsuario(Usuario entidad);
+        public void RecuperarContrasenna(Usuario entidad);
     }
 }
