@@ -23,6 +23,7 @@
    
     <div class="submit-btn-area">
         <button id="form_submit" type="submit">Enviar</button>
+       
 
         @{
             if (@ViewBag.mensaje == "Alerta")
@@ -33,6 +34,13 @@
             }
         }
     </div>
+    <br/>
+     <div class="submit-btn-area">
+
+        <button style="background-color:coral" onclick="window.location='@Url.Action("Login", "Home")'" class="btn btn-secondary">Volver</button>
+    </div>
+
+    
 </form>
 
 

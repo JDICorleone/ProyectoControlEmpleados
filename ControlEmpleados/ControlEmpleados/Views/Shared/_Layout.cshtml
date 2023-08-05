@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ControlEmpleados</title>
 
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.bootstrap5.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="~/img/sce-favicon.png">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -14,6 +20,7 @@
     <link href="~/css/metismenu.css" rel="stylesheet" />
     <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
     <link href="~/css/slicknav.min.css" rel="stylesheet" />
+    <link href="~/css/datatable.css" rel="stylesheet" />
     <!-- others css -->
     <link href="~/css/typography.css" rel="stylesheet" />
     <link href="~/css/default-css.css" rel="stylesheet" />
@@ -50,14 +57,9 @@
                                 if (Context.Session.GetString("ADMIN") != null)
                                 {
                                     <li><a asp-area="" asp-controller="Empleados" asp-action="ConsultarEmpleados"><i class="ti-user"></i> <span>Empleados</span></a></li>
+                                    <li><a asp-area="" asp-controller="Usuarios" asp-action="ConsultarUsuarios"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
                                 }
-                            }
-                            <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-users"></i><span>Usuarios</span></a>
-                                <ul class="collapse">
-                                    <li><a asp-area="" asp-controller="Usuarios" asp-action="Index">Home</a></li>
-                                </ul>
-                            </li>
+                            }    
                         </ul>
                     </nav>
                 </div>
@@ -177,7 +179,18 @@
     <!-- others plugins -->
     <script src="~/js/plugins.js"></script>
     <script src="~/js/scripts.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.bootstrap5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
