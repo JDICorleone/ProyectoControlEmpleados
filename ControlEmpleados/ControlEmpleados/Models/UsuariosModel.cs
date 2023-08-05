@@ -1,4 +1,5 @@
-﻿using ControlEmpleados.Entities;
+﻿using ControlEmpleados.Consults;
+using ControlEmpleados.Entities;
 using ControlEmpleados.Interfaces;
 
 namespace ControlEmpleados.Models
@@ -41,7 +42,7 @@ namespace ControlEmpleados.Models
             }
         }
 
-        public void RecuperarContrasenna(Usuario entidad)
+        public int RecuperarContrasenna(Usuario entidad)
         {
             using (var client = new HttpClient())
             {
@@ -50,6 +51,60 @@ namespace ControlEmpleados.Models
 
                 JsonContent body = JsonContent.Create(entidad);
                 HttpResponseMessage response = client.PostAsync(urlApi, body).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<int>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return 0;
+            }
+        }
+
+
+        public List<ConsultarUsuarios>? ConsultarUsuarios()
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Usuarios/ConsultarUsuarios";
+
+                HttpResponseMessage response = client.GetAsync(urlApi).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<List<ConsultarUsuarios>>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return new List<ConsultarUsuarios>();
+            }
+        }
+
+        public int AgregarUsuario(Usuario entidad)
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Usuarios/AgregarUsuario";
+
+                var datosUsuario = new
+                {
+                    entidad.CORREO,
+                    entidad.PASSWORD,
+                    entidad.ID_ROL
+                };
+
+                JsonContent body = JsonContent.Create(datosUsuario);
+
+                HttpResponseMessage response = client.PostAsync(urlApi,body).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<int>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return 0;
             }
         }
 
