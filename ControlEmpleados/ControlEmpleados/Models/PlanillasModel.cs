@@ -1,7 +1,5 @@
 ﻿using ControlEmpleados.Entities;
 using ControlEmpleados.Interfaces;
-using Microsoft.Extensions.Configuration;
-using System.Net.Http.Headers;
 
 namespace ControlEmpleados.Models
 {
@@ -20,7 +18,7 @@ namespace ControlEmpleados.Models
         {
             using (var client = new HttpClient())
             {
-                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Planillas/ConsultarPlanillas";
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Planilla/ConsultarPlanillas";
 
                 HttpResponseMessage response = client.GetAsync(urlApi).Result;
 
