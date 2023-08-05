@@ -14,7 +14,7 @@ namespace ControlEmpleados.Entities
         [Display(Name = "ID Empleado")]
         public int HORAS_EXTRAS { get; set; }
         [Display(Name = "Horas Extras")]
-        public string? DEDUCCIONES { get; set; }
+        public string DEDUCCIONES { get; set; }
         [Display(Name = "Deducciones")]
         public int SALARIO_NETO { get; set; }
         [Display(Name = "Salario Neto")]
