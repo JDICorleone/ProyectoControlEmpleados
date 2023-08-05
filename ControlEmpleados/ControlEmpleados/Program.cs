@@ -5,8 +5,6 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<ControlEmpleadosContext>(opciones =>
-opciones.UseSqlServer(builder.Configuration.GetConnectionString("ControlEmpleadosContext")));
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSession();

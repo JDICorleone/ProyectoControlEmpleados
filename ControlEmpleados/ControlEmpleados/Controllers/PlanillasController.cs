@@ -8,18 +8,25 @@ namespace ControlEmpleados.Controllers
 {
     public class PlanillasController : Controller
     {
-        private readonly ControlEmpleadosContext _dbContext;
+        private readonly IPlanillasModel _planillasModel;
 
-        public PlanillasController(ControlEmpleadosContext dbContext)
+        public PlanillasController(IPlanillasModel planillasModel)
         {
-            _dbContext = dbContext;
+            _planillasModel = planillasModel;
         }
 
+        [FiltroValidarAdmin]
         public IActionResult ConsultarPlanillas()
         {
-            var planillas = _dbContext.Planilla.ToList();
-            return View(planillas);
+            try
+            {
+                var datos = _planillasModel.ConsultarPlanillas();
+                return View(datos);
+            }
+            catch (Exception)
+            {
+                return View("Error");
+            }
         }
-
     }
 }
