@@ -7,7 +7,7 @@ namespace ControlEmpleados.Consults
     {
 
         public int ID_EMPLEADO { get; set; }
- 
+        public int ID_USUARIO { get; set; }
         public string? NOMBRE { get; set; }
   
         public string? PRIMER_APELLIDO { get; set; }

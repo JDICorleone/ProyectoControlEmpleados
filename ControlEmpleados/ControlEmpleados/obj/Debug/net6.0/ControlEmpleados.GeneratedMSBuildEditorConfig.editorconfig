@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Y3IK0\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/Empleados/AgregarEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEFncmVnYXJFbXBsZWFkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/Empleados/ConsultarEmpleados.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXENvbnN1bHRhckVtcGxlYWRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

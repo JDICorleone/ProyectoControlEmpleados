@@ -8,5 +8,7 @@ namespace ControlEmpleados.Interfaces
 
         public List<ConsultarEmpleados>? ConsultarEmpleados();
 
+        public int AgregarEmpleado(Empleado entidad);
+
     }
 }

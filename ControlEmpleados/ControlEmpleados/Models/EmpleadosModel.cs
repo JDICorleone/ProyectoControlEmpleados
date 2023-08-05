@@ -37,7 +37,26 @@ namespace ControlEmpleados.Models
         }
 
 
+        public int AgregarEmpleado(Empleado entidad)
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Empleados/AgregarEmpleado";
 
+
+                JsonContent body = JsonContent.Create(entidad);
+
+                HttpResponseMessage response = client.PostAsync(urlApi, body).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<int>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return 0;
+            }
+        }
 
     }
 }
