@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\ControlEmpleados.csproj": {}
+    "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\ControlEmpleados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\ControlEmpleados.csproj": {
+    "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\ControlEmpleados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\ControlEmpleados.csproj",
+        "projectUniqueName": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\ControlEmpleados.csproj",
         "projectName": "ControlEmpleados",
-        "projectPath": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\ControlEmpleados.csproj",
-        "packagesPath": "C:\\Users\\Josue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\obj\\",
+        "projectPath": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\ControlEmpleados.csproj",
+        "packagesPath": "C:\\Users\\Y3IK0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Josue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Y3IK0\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

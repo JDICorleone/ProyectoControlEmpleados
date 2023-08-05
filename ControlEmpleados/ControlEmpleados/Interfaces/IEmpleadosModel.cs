@@ -1,11 +1,14 @@
-﻿using ControlEmpleados.Entities;
+﻿using ControlEmpleados.Consults;
+using ControlEmpleados.Entities;
 
 namespace ControlEmpleados.Interfaces
 {
     public interface IEmpleadosModel
     {
 
-        public List<Empleado>? ConsultarEmpleados();
+        public List<ConsultarEmpleados>? ConsultarEmpleados();
+
+        public int AgregarEmpleado(Empleado entidad);
 
     }
 }

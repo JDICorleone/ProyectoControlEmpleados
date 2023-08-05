@@ -1,0 +1,64 @@
+﻿
+.dt-buttons {
+    margin-top: 10px;
+}
+    /* Ajusta el espaciado entre los botones individuales */
+    .dt-buttons button {
+        margin-right: 5px;
+        background-color: #906BCF;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+
+.table {
+    border-collapse: collapse; /* Colapsar los bordes de la tabla */
+    width: 100%;
+
+}
+
+    .table th, .table td {
+        text-align: center; /* Centrar el contenido de las celdas */
+        padding: 8px; /* Agregar un espacio interno al contenido de las celdas */
+        vertical-align: middle; /* Centrar el contenido de las celdas verticalmente */
+    }
+
+    .table th {
+        color: white;
+        background-color: #93b2e2;
+        text-align: center;
+    }
+
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td {
+    text-align: center;
+}
+
+    /*     background-color: #bc98f3;   Moradito bonito*/
+
+
+    /* Estilo de las filas pares (rayas de un color) */
+    .table tbody tr:nth-child(even) {
+        background-color: #f2f2f2; /* Puedes cambiar este color al que desees */
+    }
+
+    /* Estilo de las filas impares (rayas de otro color) */
+    .table tbody tr:nth-child(odd) {
+        background-color: #e0e0e0; /* Puedes cambiar este color al que desees */
+    }
+
+
+
+/* Estilo para el ícono en tamaño 2x */
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa-1-5x {
+    font-size: 1.5em;
+}
+
+/* Clase para personalizar el color del ícono */
+.custom-icon-color {
+    color: #906BCF; /* Cambia el color a tu preferencia */
+}
+

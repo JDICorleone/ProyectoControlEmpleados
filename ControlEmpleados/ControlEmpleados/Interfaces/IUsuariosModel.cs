@@ -1,4 +1,5 @@
-﻿using ControlEmpleados.Entities;
+﻿using ControlEmpleados.Consults;
+using ControlEmpleados.Entities;
 
 namespace ControlEmpleados.Interfaces
 {
@@ -6,6 +7,10 @@ namespace ControlEmpleados.Interfaces
     {
 
         public Usuario? ValidarUsuario(Usuario entidad);
-        public void RecuperarContrasenna(Usuario entidad);
+        public int RecuperarContrasenna(Usuario entidad);
+
+        public List<ConsultarUsuarios>? ConsultarUsuarios();
+
+        public int AgregarUsuario(Usuario entidad);
     }
 }
