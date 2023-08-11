@@ -12,11 +12,13 @@ namespace ControlEmpleados.Controllers
     {
         private readonly IEmpleadosModel _empleadosModel;
         private readonly IUsuariosModel _usuariosModel;
+        private readonly IPuestosModel _puestosModel;
 
-        public EmpleadosController(IEmpleadosModel empleadosModel, IUsuariosModel usuariosModel)
+        public EmpleadosController(IEmpleadosModel empleadosModel, IUsuariosModel usuariosModel, IPuestosModel puestosModel)
         {
             _empleadosModel = empleadosModel;
             _usuariosModel = usuariosModel;
+            _puestosModel = puestosModel;
         }
 
         [FiltroValidarAdmin]
@@ -43,6 +45,9 @@ namespace ControlEmpleados.Controllers
 
                 var empleados = _empleadosModel.ConsultarEmpleados();
 
+                var puestos = _puestosModel.ConsultarPuestos();
+
+                ViewBag.Puestos = puestos;
 
                 ViewBag.Empleados = empleados;
 
@@ -87,6 +92,9 @@ namespace ControlEmpleados.Controllers
 
                 var empleados = _empleadosModel.ConsultarEmpleados();
 
+                var puestos = _puestosModel.ConsultarPuestos();
+
+                ViewBag.Puestos = puestos;
 
                 ViewBag.Empleados = empleados;
 
