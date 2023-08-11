@@ -143,18 +143,21 @@
                             @if (Model.ID_EMPLEADO != 0)
                             {
                                 <select class="form-control" id="ID_PUESTO" name="ID_PUESTO" required>
-                                    <option value="1" selected="@(Model.ID_PUESTO == 1)">Agente de ventas</option>
-                                    <option value="2" selected="@(Model.ID_PUESTO == 2)">Supervisor</option>
-                                    <option value="3" selected="@(Model.ID_PUESTO == 3)">DevOps</option>
+                                    @foreach (var puesto in ViewBag.Puestos)
+                                    {
+                                        <option value="@puesto.ID_PUESTO" selected="@(Model.ID_PUESTO == puesto.ID_PUESTO)">@puesto.NOMBRE_PUESTO</option>
+                                    }
                                 </select>
                             }
                             else
                             {
                                 <select class="form-control" id="ID_PUESTO" name="ID_PUESTO" required>
                                     <option value="">Seleccione</option>
-                                    <option value="1">Agente de ventas</option>
-                                    <option value="2">Supervisor</option>
-                                    <option value="3">DevOps</option>
+                                    @foreach (var puesto in ViewBag.Puestos)
+                                    {
+                                        <option value="@puesto.ID_PUESTO">@puesto.NOMBRE_PUESTO</option>
+                                    }
+
                                 </select>
                             }
                         </div>
