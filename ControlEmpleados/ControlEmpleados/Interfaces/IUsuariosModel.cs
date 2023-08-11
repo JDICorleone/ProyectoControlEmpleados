@@ -12,5 +12,11 @@ namespace ControlEmpleados.Interfaces
         public List<ConsultarUsuarios>? ConsultarUsuarios();
 
         public int AgregarUsuario(Usuario entidad);
+
+        public int EditarUsuario(Usuario entidad);
+
+        public List<Usuario>? ConsultarUsuarios2();
+
+        public bool CorreoExiste(Usuario entidad);
     }
 }

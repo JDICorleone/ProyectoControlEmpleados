@@ -76,7 +76,22 @@ namespace ControlEmpleados.Controllers
         {
             try
             {
-                return View();
+                int idUsuario = int.Parse(HttpContext.Session.GetString("idUsuarioSession").ToString());
+
+                if (idUsuario == 0)
+                {
+
+                    var entidad = new Usuario();
+
+                    return View(entidad);
+                }
+                else
+                {
+                    var usuario = _usuariosModel.ConsultarUsuarios2().FirstOrDefault(x => x.ID_USUARIO == idUsuario);
+
+
+                    return View(usuario);
+                }
             }
             catch (Exception ex)
             {
@@ -91,26 +106,64 @@ namespace ControlEmpleados.Controllers
         {
             try
             {
-                
-                    var resultado = _usuariosModel.AgregarUsuario(entidad);
+                bool correoExiste = _usuariosModel.CorreoExiste(entidad);
 
-                    if (resultado > 0)
+                int idUsuario = int.Parse(HttpContext.Session.GetString("idUsuarioSession").ToString());
+                entidad.ID_USUARIO = idUsuario;
+
+                if (idUsuario == 0)
+                {
+                    if (correoExiste)
                     {
-                        ViewBag.mensaje = "OK";
-                        return View();
+                        ViewBag.Alerta = "ERROR";
+                        return View(entidad);
                     }
-                    else
-                    {
-                        ViewBag.mensaje = "ERROR";
-                        return View();
-                    }
-                
-                
+                    else {
+                        var resultado = _usuariosModel.AgregarUsuario(entidad);
+                        if (resultado > 0)
+                        {
+                            ViewBag.mensaje = "OK";
+                            return View(entidad);
+                        }
+                        else
+                        {
+                            ViewBag.mensaje = "ERROR";
+                            return View();
+                        }
+                    }                
+                }
+                else
+                {
+                    ViewBag.mensaje = "OK.";
+
+                    var usuario = _usuariosModel.ConsultarUsuarios2().FirstOrDefault(x => x.ID_USUARIO == idUsuario);
+
+                    _usuariosModel.EditarUsuario(entidad);
+
+                    return View(usuario);
+                }
             }
             catch (Exception ex)
             {
                 return View("Error");
             }
         }
+
+
+        public ActionResult CargarIngreso(int idUsuario)
+        {
+            try
+            {
+                HttpContext.Session.SetString("idUsuarioSession", idUsuario.ToString());
+                return Json(idUsuario);
+            }
+            catch (Exception ex)
+            {
+                return Json(null);
+            }
+        }
+
+    
+
     }
 }

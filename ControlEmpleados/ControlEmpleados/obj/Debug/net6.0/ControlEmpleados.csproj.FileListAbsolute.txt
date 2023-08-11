@@ -135,6 +135,7 @@ C:\Users\Josue\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\Contro
 C:\Users\Josue\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados\obj\Debug\net6.0\ControlEmpleados.genruntimeconfig.cache
 C:\Users\Josue\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados\obj\Debug\net6.0\ref\ControlEmpleados.dll
 D:\Universidad\7 Cuatrimestre\Programación Avanzada en Web\Proyecto\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados\obj\Debug\net6.0\scopedcss\Views\Shared\_Login.cshtml.rz.scp.css
+C:\Users\Josue\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados\obj\Debug\net6.0\scopedcss\Views\Shared\_Login.cshtml.rz.scp.css
 C:\Users\Y3IK0\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Y3IK0\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados\bin\Debug\net6.0\appsettings.json
 C:\Users\Y3IK0\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados\bin\Debug\net6.0\ControlEmpleados.staticwebassets.runtime.json
@@ -204,4 +205,3 @@ C:\Users\Y3IK0\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\Contro
 C:\Users\Y3IK0\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados\obj\Debug\net6.0\ControlEmpleados.pdb
 C:\Users\Y3IK0\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados\obj\Debug\net6.0\ControlEmpleados.genruntimeconfig.cache
 C:\Users\Y3IK0\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados\obj\Debug\net6.0\ref\ControlEmpleados.dll
-C:\Users\Josue\Documents\GitHub\ProyectoControlEmpleados\ControlEmpleados\ControlEmpleados\obj\Debug\net6.0\scopedcss\Views\Shared\_Login.cshtml.rz.scp.css

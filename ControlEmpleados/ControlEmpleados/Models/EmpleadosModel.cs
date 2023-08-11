@@ -36,6 +36,23 @@ namespace ControlEmpleados.Models
             }
         }
 
+        public List<Empleado>? ConsultarEmpleados2()
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Empleados/ConsultarEmpleados2";
+
+                HttpResponseMessage response = client.GetAsync(urlApi).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<List<Empleado>>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return new List<Empleado>();
+            }
+        }
 
         public int AgregarEmpleado(Empleado entidad)
         {
@@ -47,6 +64,26 @@ namespace ControlEmpleados.Models
                 JsonContent body = JsonContent.Create(entidad);
 
                 HttpResponseMessage response = client.PostAsync(urlApi, body).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<int>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return 0;
+            }
+        }
+
+        public int EditarEmpleado(Empleado entidad)
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Empleados/EditarEmpleado";
+
+                JsonContent body = JsonContent.Create(entidad);
+
+                HttpResponseMessage response = client.PutAsync(urlApi, body).Result;
 
                 if (response.IsSuccessStatusCode)
                     return response.Content.ReadFromJsonAsync<int>().Result;

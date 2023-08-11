@@ -81,6 +81,24 @@ namespace ControlEmpleados.Models
             }
         }
 
+        public List<Usuario>? ConsultarUsuarios2()
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Usuarios/ConsultarUsuarios2";
+
+                HttpResponseMessage response = client.GetAsync(urlApi).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<List<Usuario>>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return new List<Usuario>();
+            }
+        }
+
         public int AgregarUsuario(Usuario entidad)
         {
             using (var client = new HttpClient())
@@ -108,5 +126,46 @@ namespace ControlEmpleados.Models
             }
         }
 
+
+        public int EditarUsuario(Usuario entidad)
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Usuarios/EditarUsuario";
+
+                JsonContent body = JsonContent.Create(entidad);
+
+                HttpResponseMessage response = client.PutAsync(urlApi, body).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<int>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return 0;
+            }
+        }
+
+
+        public bool CorreoExiste(Usuario entidad)
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Usuarios/CorreoExiste";
+
+                JsonContent body = JsonContent.Create(entidad);
+
+                HttpResponseMessage response = client.PostAsync(urlApi, body).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<bool>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return false;
+            }
+        }
     }
 }
