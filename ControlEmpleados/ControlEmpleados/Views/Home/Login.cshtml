@@ -41,6 +41,13 @@
                 ;
 
             }
+
+            if (@ViewBag.mensaje == "ERROR")
+            {
+                @Html.Raw("<script> $(document).ready(function() {\r\n         alertaINACTIVO();\r\n      });       </script>")
+                ;
+
+            }
         }
     </div>
 </form>
@@ -66,5 +73,18 @@
         let Correo = $("#correoLogin").val("");
     }
 
+    
+    function alertaINACTIVO() {
 
+        Swal.fire({
+            position: 'top-center',
+            icon: 'error',
+            title: 'El usario está INACTIVO.',
+            text: 'Por favor, pongase en contacto con un administrador.',
+            showConfirmButton: true
+        })
+         let Correo = $("#correoLogin").val("");
+    }
+
+       
   </script>

@@ -48,7 +48,23 @@ namespace ControlEmpleados.Controllers
 
                 ViewBag.Usuarios = usuarios;
 
-                return View();
+                int idEmpleado = int.Parse(HttpContext.Session.GetString("idEmpleadoSession").ToString());
+
+                if (idEmpleado == 0)
+                {
+
+                    var entidad = new Empleado();
+
+                    return View(entidad);
+                }
+                else
+                {
+                    var empleado = _empleadosModel.ConsultarEmpleados2().FirstOrDefault(x => x.ID_EMPLEADO == idEmpleado);
+
+
+                    return View(empleado);
+                }
+
             }
             catch (Exception ex)
             {
@@ -63,6 +79,10 @@ namespace ControlEmpleados.Controllers
         {
             try
             {
+                int idEmpleado = int.Parse(HttpContext.Session.GetString("idEmpleadoSession").ToString());
+
+                entidad.ID_EMPLEADO = idEmpleado;
+
                 var usuarios = _usuariosModel.ConsultarUsuarios();
 
                 var empleados = _empleadosModel.ConsultarEmpleados();
@@ -72,21 +92,34 @@ namespace ControlEmpleados.Controllers
 
                 ViewBag.Usuarios = usuarios;
 
-                entidad.ID_ESTADO = 1;
-
-                var resultado = _empleadosModel.AgregarEmpleado(entidad);
-
-                if (resultado > 0)
+                if (idEmpleado == 0)
                 {
-                    ViewBag.mensaje = "OK";
-                    return View();
-                }
-                else
-                {
-                    ViewBag.mensaje = "ERROR";
-                    return View();
-                }
+                    entidad.ID_ESTADO = 1;
 
+                    var resultado = _empleadosModel.AgregarEmpleado(entidad);
+
+                    if (resultado > 0)
+                    {
+                        ViewBag.mensaje = "OK";
+                        return View(entidad);
+                    }
+                    else
+                    {
+                        ViewBag.mensaje = "ERROR";
+                        return View();
+                    }
+                }
+                else {
+
+                    ViewBag.mensaje = "OK.";
+
+                    var empleado = _empleadosModel.ConsultarEmpleados2().FirstOrDefault(x => x.ID_EMPLEADO == idEmpleado);
+
+                    _empleadosModel.EditarEmpleado(entidad);
+
+                    return View(empleado);
+
+                }
 
             }
             catch (Exception ex)
@@ -94,5 +127,19 @@ namespace ControlEmpleados.Controllers
                 return View("Error");
             }
         }
+
+        public ActionResult CargarIngreso(int idEmpleado)
+        {
+            try
+            {
+                HttpContext.Session.SetString("idEmpleadoSession", idEmpleado.ToString());
+                return Json(idEmpleado);
+            }
+            catch (Exception ex)
+            {
+                return Json(null);
+            }
+        }
+
     }
 }
