@@ -10,6 +10,8 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddSession();
 builder.Services.AddScoped<IUsuariosModel, UsuariosModel>();
 builder.Services.AddScoped<IEmpleadosModel, EmpleadosModel>();
+builder.Services.AddScoped<IPlanillasModel, PlanillasModel>();
+builder.Services.AddScoped<IPuestosModel, PuestosModel>();
 
 
 var app = builder.Build();

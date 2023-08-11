@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ControlEmpleados.Entities.Planilla>
+@{
+    ViewData["Title"] = "Planillas";
+}
+
+<div class="row">
+
+    <div class="col-md-1 grid-margin stretch-card">
+    </div>
+
+    <div class="col-md-10 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title text-center">Planillas</h4>
+                <br />
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th class="text-center">#</th>
+                            <th class="text-center">Fecha</th>
+                            <th class="text-center">ID Empleado</th>
+                            <th class="text-center">Horas Extras</th>
+                            <th class="text-center">Deducciones</th>
+                            <th class="text-center">Salario Neto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+
+                            <tr>
+                                <td class="text-center">@item.ID_PLANILLA</td>
+                                <td class="text-center">@item.FECHA </td>
+                                <td class="text-center">@item.ID_EMPLEADO</td>
+                                <td class="text-center">@item.HORAS_EXTRAS</td>
+                                <td class="text-center">@item.DEDUCCIONES</td>
+                                <td class="text-center">@item.SALARIO_NETO</td>
+                            </tr>
+
+
+
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
