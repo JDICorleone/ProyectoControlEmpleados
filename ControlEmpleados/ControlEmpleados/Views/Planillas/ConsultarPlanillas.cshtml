@@ -1,0 +1,114 @@
+﻿@model IEnumerable<ControlEmpleados.Entities.Planilla>
+@{
+    ViewData["Title"] = "Planilla";
+}
+
+<div class="row">
+
+    <div class="col-md-1 grid-margin stretch-card">
+    </div>
+
+    <div class="col-md-10 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title text-center">Planillas</h4>
+                <br />
+                <table class="table table-responsive" id="TablaConsultas">
+                    <thead>
+                        <tr>
+                            <th class="text-center">#</th>
+                            <th class="text-center">Fecha</th>
+                            <th class="text-center">ID Empleado</th>
+                            <th class="text-center">Horas Extras</th>
+                            <th class="text-center">Deducciones</th>
+                            <th class="text-center">Salario Neto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+
+                            <tr>
+                                <td class="text-center">@item.ID_PLANILLA</td>
+                                <td class="text-center">@item.FECHA</td>
+                                <td class="text-center">@item.ID_EMPLEADO></td>
+                                <td class="text-center">@item.HORAS_EXTRAS></td>
+                                <td class="text-center">@item.DEDUCCIONES></td>
+                                <td class="text-center">@item.SALARIO_NETO></td>
+                                <td>
+                                    <a href="#">
+                                        <i class="fa-solid fa-pencil fa-1x custom-icon-color"></i>
+
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+
+    var lang = {
+        "sProcessing": "Procesando...",
+        "sLengthMenu": "Mostrar _MENU_ registros",
+        "sZeroRecords": "No se encontraron resultados",
+        "sEmptyTable": "Ningún dato disponible en esta tabla",
+        "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+        "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+        "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+        "sInfoPostFix": "",
+        "sSearch": "Buscar:",
+        "sUrl": "",
+        "sInfoThousands": ",",
+        "sLoadingRecords": "Cargando...",
+        "oPaginate": {
+            "sFirst": "Primero",
+            "sLast": "Último",
+            "sNext": "Siguiente",
+            "sPrevious": "Anterior"
+        },
+        "oAria": {
+            "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+            "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+        },
+        "buttons": {
+            "copy": "Copiar",
+            "colvis": "Mostrar Columnas",
+            "pdf": "PDF",
+            "excel": "Excel",
+            "print": "Imprimir"
+
+        }
+    }
+
+    var BtnAgregar = {
+        text: 'Agregar',
+        action: function (e, dt, node, config) {
+            window.location.href = "/Planillas/AgregarPlanilla";
+        }
+    };
+
+    $(document).ready(function () {
+        var table = $('#TablaConsultas').DataTable({
+            language: lang,
+            lengthChange: false,
+            buttons: [
+
+                'colvis', BtnAgregar
+            ]
+        });
+
+        table.buttons().container()
+            .appendTo('#TablaConsultas_wrapper .col-md-6:eq(0)');
+    });
+
+
+</script>

@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Xml.Linq;
 
 namespace ControlEmpleados.Entities
@@ -27,16 +26,16 @@ namespace ControlEmpleados.Entities
 
 
 
-        [NotMapped]
-        public int ID_HORARIO { get; set; }
-        [NotMapped]
-        public int ID_PERIODO { get; set; }
-        [NotMapped]
-        public int ID_ROL { get; set; }
-        [NotMapped]
-        public int ID_PUESTO { get; set; }
-        [NotMapped]
-        public int ID_ESTADO { get; set; }
+       // [NotMapped]
+       // public int ID_HORARIO { get; set; }
+       // [NotMapped]
+       // public int ID_PERIODO { get; set; }
+       // [NotMapped]
+       // public int ID_ROL { get; set; }
+       // [NotMapped]
+       // public int ID_PUESTO { get; set; }
+        // [NotMapped]
+       // public int ID_ESTADO { get; set; }
 
     
     }

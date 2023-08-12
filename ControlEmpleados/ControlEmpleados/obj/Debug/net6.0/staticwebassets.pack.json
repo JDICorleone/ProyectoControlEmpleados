@@ -1,399 +1,399 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ControlEmpleados.bundle.scp.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ControlEmpleados.bundle.scp.css",
       "PackagePath": "staticwebassets\\ControlEmpleados.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\DataTable.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\DataTable.css",
       "PackagePath": "staticwebassets\\css\\DataTable.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\default-css.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\default-css.css",
       "PackagePath": "staticwebassets\\css\\default-css.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\font-awesome.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\font-awesome.min.css",
       "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\metisMenu.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\metisMenu.css",
       "PackagePath": "staticwebassets\\css\\metisMenu.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\owl.carousel.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\responsive.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\responsive.css",
       "PackagePath": "staticwebassets\\css\\responsive.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\slicknav.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\slicknav.min.css",
       "PackagePath": "staticwebassets\\css\\slicknav.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\styles.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\themify-icons.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\themify-icons.css",
       "PackagePath": "staticwebassets\\css\\themify-icons.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\typography.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\css\\typography.css",
       "PackagePath": "staticwebassets\\css\\typography.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\FontAwesome.otf",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\FontAwesome.otf",
       "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\fontawesome-webfont.eot",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\fontawesome-webfont.svg",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\fontawesome-webfont.ttf",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\fontawesome-webfont.woff",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\fontawesome-webfont.woff2",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\themify.eot",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\themify.eot",
       "PackagePath": "staticwebassets\\fonts\\themify.eot"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\themify.svg",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\themify.svg",
       "PackagePath": "staticwebassets\\fonts\\themify.svg"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\themify.ttf",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\themify.ttf",
       "PackagePath": "staticwebassets\\fonts\\themify.ttf"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\themify.woff",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\fonts\\themify.woff",
       "PackagePath": "staticwebassets\\fonts\\themify.woff"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\avatar.png",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\avatar.png",
       "PackagePath": "staticwebassets\\img\\avatar.png"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\sce-1.png",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\sce-1.png",
       "PackagePath": "staticwebassets\\img\\sce-1.png"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\sce-favicon.png",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\sce-favicon.png",
       "PackagePath": "staticwebassets\\img\\sce-favicon.png"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\sce-white-1.png",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\img\\sce-white-1.png",
       "PackagePath": "staticwebassets\\img\\sce-white-1.png"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\bar-chart.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\bar-chart.js",
       "PackagePath": "staticwebassets\\js\\bar-chart.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\jquery.slicknav.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\jquery.slicknav.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.slicknav.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\jquery.slimscroll.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\jquery.slimscroll.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.slimscroll.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\line-chart.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\line-chart.js",
       "PackagePath": "staticwebassets\\js\\line-chart.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\maps.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\maps.js",
       "PackagePath": "staticwebassets\\js\\maps.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\metisMenu.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\metisMenu.min.js",
       "PackagePath": "staticwebassets\\js\\metisMenu.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\owl.carousel.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\pie-chart.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\pie-chart.js",
       "PackagePath": "staticwebassets\\js\\pie-chart.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\plugins.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\plugins.js",
       "PackagePath": "staticwebassets\\js\\plugins.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\popper.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\popper.min.js",
       "PackagePath": "staticwebassets\\js\\popper.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\scripts.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\scripts.js",
       "PackagePath": "staticwebassets\\js\\scripts.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\vendor\\modernizr-2.8.3.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\js\\vendor\\modernizr-2.8.3.min.js",
       "PackagePath": "staticwebassets\\js\\vendor\\modernizr-2.8.3.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Y3IK0\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Josue\\Documents\\GitHub\\ProyectoControlEmpleados\\ControlEmpleados\\ControlEmpleados\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
