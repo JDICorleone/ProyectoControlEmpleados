@@ -33,7 +33,7 @@
                                 <td class="text-center">@item.ROL</td>
 
                                 <td>
-                                    <a href="#">
+                                    <a onclick="agregarUsuario(@item.ID_USUARIO)">
                                         <i class="fa-solid fa-pencil fa-1x custom-icon-color"></i>
 
                                     </a>
@@ -93,7 +93,7 @@
     var BtnAgregar = {
         text: 'Agregar',
         action: function (e, dt, node, config) {
-            window.location.href = "/Usuarios/AgregarUsuario";
+            agregarUsuario(0);
         }
     };
 
@@ -111,7 +111,25 @@
             .appendTo('#TablaConsultas_wrapper .col-md-6:eq(0)');
     });
 
- 
+
+    function agregarUsuario(idUsuario) {
+        $.ajax({
+            type: "POST",
+            url: "/Usuarios/CargarIngreso",
+            data: {
+                idUsuario: idUsuario
+            },
+            cache: false,
+            dataType: 'json',
+            success: function (datos) {
+                var url = "AgregarUsuario";
+                location.href = url;
+            },
+            error: function (data) {
+
+            }
+        });
+    }
 </script>
 
 
