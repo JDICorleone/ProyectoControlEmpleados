@@ -19,7 +19,7 @@ namespace ControlEmpleados.Models
         {
             using (var client = new HttpClient())
             {
-                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Planilla/ConsultarPlanillas";
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Planillas/ConsultarPlanillas";
 
                 HttpResponseMessage response = client.GetAsync(urlApi).Result;
 
