@@ -34,7 +34,18 @@ namespace ControlEmpleados.Controllers
         {
             try
             {
-                return View();
+                int idPuesto = int.Parse(HttpContext.Session.GetString("idPuestoSession").ToString());
+
+                if (idPuesto == 0)
+                {
+                    var entidad = new Puestos();
+                    return View(entidad);
+                }
+                else
+                {
+                    var puesto = _puestosModel.ConsultarPuestos().FirstOrDefault(x => x.ID_PUESTO == idPuesto);
+                    return View(puesto);
+                }    
             }
             catch (Exception ex)
             {
@@ -47,24 +58,58 @@ namespace ControlEmpleados.Controllers
         {
             try
             {
-                entidad.ID_PUESTO = 0;
+                int idPuesto = int.Parse(HttpContext.Session.GetString("idPuestoSession").ToString());
 
-                var resultado = _puestosModel.AgregarPuesto(entidad);
+                entidad.ID_PUESTO = idPuesto;
 
-                if (resultado > 0)
+
+
+                if (idPuesto == 0) {
+
+                    entidad.ID_PUESTO = 0;
+
+                    var resultado = _puestosModel.AgregarPuesto(entidad);
+
+                    if (resultado > 0)
+                    {
+                        ViewBag.mensaje = "OK";
+                        return View(entidad);
+                    }
+                    else
+                    {
+                        ViewBag.mensaje = "ERROR";
+                        return View();
+                    }
+                } else
                 {
-                    ViewBag.mensaje = "OK";
-                    return View();
+                    ViewBag.mensaje = "OK.";
+
+                    var puesto = _puestosModel.ConsultarPuestos().FirstOrDefault(x => x.ID_PUESTO == idPuesto);
+
+                    _puestosModel.EditarPuesto(entidad);
+
+                    return View(puesto);
                 }
-                else
-                {
-                    ViewBag.mensaje = "ERROR";
-                    return View();
-                }
+
+                
             }
             catch (Exception ex)
             {
                 return View("Error");
+            }
+        }
+
+
+        public ActionResult CargarIngreso(int idPuesto)
+        {
+            try
+            {
+                HttpContext.Session.SetString("idPuestoSession", idPuesto.ToString());
+                return Json(idPuesto);
+            }
+            catch (Exception ex)
+            {
+                return Json(null);
             }
         }
     }
