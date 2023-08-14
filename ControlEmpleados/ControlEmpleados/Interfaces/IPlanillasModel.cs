@@ -1,10 +1,14 @@
-﻿using ControlEmpleados.Entities;
+﻿using ControlEmpleados.Consults;
+using ControlEmpleados.Entities;
+
 
 namespace ControlEmpleados.Interfaces
 {
     public interface IPlanillasModel
     {
-        public List<Planilla>? ConsultarPlanillas();
+        public List<ConsultarPlanillas>? ConsultarPlanillas();
         public int AgregarPlanilla(Planilla entidad);
+        public int EditarPlanilla(Planilla entidad);
+        public List<Planilla>? ConsultarPlanillas2();
     }
 }

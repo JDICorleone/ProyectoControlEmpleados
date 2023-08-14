@@ -27,13 +27,29 @@ namespace ControlEmpleados.Controllers
                 return View("Error");
             }
         }
+
         [HttpGet]
         [FiltroValidarAdmin]
         public IActionResult AgregarPlanilla()
         {
             try
             {
-                return View();
+                int idPlanilla = int.Parse(HttpContext.Session.GetString("idPlanillaSession").ToString());
+
+                if (idPlanilla == 0)
+                {
+
+                    var entidad = new Planilla();
+
+                    return View(entidad);
+                }
+                else
+                {
+                    var planilla = _planillasModel.ConsultarPlanillas2().FirstOrDefault(x => x.ID_PLANILLA == idPlanilla);
+
+
+                    return View(planilla);
+                }
             }
             catch (Exception ex)
             {
@@ -46,19 +62,34 @@ namespace ControlEmpleados.Controllers
         {
             try
             {
-                entidad.ID_PLANILLA = 0;
+                //bool correoExiste = _usuariosModel.CorreoExiste(entidad);
 
-                var resultado = _planillasModel.AgregarPlanilla(entidad);
+                int idPlanilla = int.Parse(HttpContext.Session.GetString("idPlanillaSession").ToString());
+                entidad.ID_PLANILLA = idPlanilla;
 
-                if (resultado > 0)
+                if (idPlanilla == 0)
                 {
-                    ViewBag.mensaje = "OK";
-                    return View();
-                }
+                        var resultado = _planillasModel.AgregarPlanilla(entidad);
+                        if (resultado > 0)
+                        {
+                            ViewBag.mensaje = "OK";
+                            return View(entidad);
+                        }
+                        else
+                        {
+                            ViewBag.mensaje = "ERROR";
+                            return View();
+                        }
+                    }
                 else
                 {
-                    ViewBag.mensaje = "ERROR";
-                    return View();
+                    ViewBag.mensaje = "OK.";
+
+                    var planilla = _planillasModel.ConsultarPlanillas2().FirstOrDefault(x => x.ID_PLANILLA == idPlanilla);
+
+                    _planillasModel.EditarPlanilla(entidad);
+
+                    return View(planilla);
                 }
             }
             catch (Exception ex)
@@ -66,5 +97,18 @@ namespace ControlEmpleados.Controllers
                 return View("Error");
             }
         }
+        public ActionResult CargarIngreso(int idPlanilla)
+        {
+            try
+            {
+                HttpContext.Session.SetString("idPlanillaSession", idPlanilla.ToString());
+                return Json(idPlanilla);
+            }
+            catch (Exception ex)
+            {
+                return Json(null);
+            }
+        }
+
     }
 }
