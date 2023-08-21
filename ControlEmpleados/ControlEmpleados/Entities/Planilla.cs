@@ -24,7 +24,5 @@ namespace ControlEmpleados.Entities
         [Required(ErrorMessage = "Debe completar este campo.")]
         public int SALARIO_NETO { get; set; }
 
-
-
     }
 }
