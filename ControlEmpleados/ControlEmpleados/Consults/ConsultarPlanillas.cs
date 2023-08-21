@@ -13,5 +13,8 @@ namespace ControlEmpleados.Consults
 
         //Traido de Empleado
         public string? NOMBRE { get; set; }
+        public string? PRIMER_APELLIDO { get; set; }
+        public string? SEGUNDO_APELLIDO { get; set; }
+        public int? PAGO_POR_HORA { get; set; }
     }
 }
