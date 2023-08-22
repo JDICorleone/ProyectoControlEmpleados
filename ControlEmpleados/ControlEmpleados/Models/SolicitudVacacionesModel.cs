@@ -54,6 +54,25 @@ namespace ControlEmpleados.Models
             }
         }
 
+        public List<ConsultarSolicitudVacaciones>? ConsultarSolicitudesEmpleado(int id)
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/SolicitudVacaciones/ConsultarSolicitudesEmpleado"+"?id="+id;
+
+                HttpResponseMessage response = client.GetAsync(urlApi).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<List<ConsultarSolicitudVacaciones>>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return new List<ConsultarSolicitudVacaciones>();
+            }
+        }
+
+
         public int cantidadVacaciones(DateTime FECHA_INICIO, DateTime FECHA_FINAL) {
             int dias = (FECHA_FINAL - FECHA_INICIO).Days + 1;
             return dias;

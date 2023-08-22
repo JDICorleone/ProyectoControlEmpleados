@@ -9,6 +9,8 @@ namespace ControlEmpleados.Interfaces
 
         public int AgregarSolicitud(Solicitud_Vacaciones entidad);
 
+        public List<ConsultarSolicitudVacaciones>? ConsultarSolicitudesEmpleado(int id);
+
         public int cantidadVacaciones(DateTime FECHA_INICIO, DateTime FECHA_FINAL);
     }
 }

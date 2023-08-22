@@ -71,5 +71,24 @@ namespace ControlEmpleados.Controllers
                 return View("Error");
             }
         }
+        public IActionResult MisSolicitudes()
+        {
+            try
+            {
+                int idUsuario = int.Parse(HttpContext.Session.GetString("ID").ToString());
+
+                var empleado = _empleadosModel.ConsultarEmpleados2().FirstOrDefault(x => x.ID_USUARIO == idUsuario);
+
+                var idempleado = empleado.ID_EMPLEADO;
+
+
+                var datos = _solicitudVacacionesModel.ConsultarSolicitudesEmpleado(idempleado);
+                return View(datos);
+            }
+            catch (Exception)
+            {
+                return View("Error");
+            }
+        }
     }
 }
