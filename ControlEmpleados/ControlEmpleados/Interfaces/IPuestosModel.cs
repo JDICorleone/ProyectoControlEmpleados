@@ -7,5 +7,7 @@ namespace ControlEmpleados.Interfaces
         public List<Puestos>? ConsultarPuestos();
 
         public int AgregarPuesto(Puestos entidad);
+
+        public int EditarPuesto(Puestos entidad);
     }
 }

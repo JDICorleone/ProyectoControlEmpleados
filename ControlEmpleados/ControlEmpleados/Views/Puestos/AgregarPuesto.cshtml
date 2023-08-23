@@ -1,13 +1,19 @@
 ﻿@model ControlEmpleados.Entities.Puestos
 
 @{
-    ViewData["Title"] = "Agregar Empleado";
+    ViewData["Title"] = "Puestos";
 }
 
 <div class="container mt-5">
     <div class="card mx-auto" style="max-width: 400px;">
-        <div class="card-header text-center">
-            <h5>Agregar Puesto</h5>
+            @if (Model.ID_PUESTO != 0)
+            {
+                <h5>Editar Puesto</h5>
+            }
+            else
+            {
+                <h5>Agregar Puesto</h5>
+            }
         </div>
         <div class="card-body card">
             <form method="post" asp-controller="Puestos" asp-action="AgregarPuesto">
@@ -16,13 +22,20 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="NOMBRE">Nombre:</label>
-                            <input type="text" class="form-control" id="NOMBRE_PUESTO" name="NOMBRE_PUESTO" required>
+                        <input type="text" class="form-control" id="NOMBRE_PUESTO" name="NOMBRE_PUESTO" value="@Model.NOMBRE_PUESTO"  required>
                         </div>
                     </div>
                 </div>
                 <br />
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Agregar</button>
+                    @if (Model.ID_PUESTO != 0)
+                    {
+                        <button type="submit" class="btn btn-primary">Editar</button>
+                    }
+                    else
+                    {
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    }
                     <a onclick="window.location='@Url.Action("ConsultarPuestos", "Puestos")'" class="btn btn-secondary" style="background-color:coral">Volver</a>
                 </div>
             </form>
@@ -31,6 +44,12 @@
                 if (@ViewBag.mensaje == "OK")
                 {
                     @Html.Raw("<script> $(document).ready(function() {\r\n alertaRegistro();\r\n }); </script>")
+                    ;
+                }
+
+                if (@ViewBag.mensaje == "OK.")
+                {
+                    @Html.Raw("<script> $(document).ready(function() {\r\n alertaEdit();\r\n }); </script>")
                     ;
                 }
             }
@@ -52,7 +71,20 @@
         setTimeout(function () {
             window.location.href = "/Puestos/ConsultarPuestos";
         }, 3000);
-
-
     }
+
+    function alertaEdit() {
+
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Los datos del puesto se actualizaron correctamente!',
+            showConfirmButton: true
+
+        })
+        setTimeout(function () {
+            window.location.href = "/Puestos/ConsultarPuestos";
+        }, 3000);
+    }
+
 </script>

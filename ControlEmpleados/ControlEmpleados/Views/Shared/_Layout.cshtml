@@ -61,7 +61,19 @@
                                     <li><a asp-area="" asp-controller="Planillas" asp-action="ConsultarPlanillas"><i class="ti-user"></i> <span>Planillas</span></a></li>
                                     <li><a asp-area="" asp-controller="Usuarios" asp-action="ConsultarUsuarios"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
                                 }
-                            }    
+                            }
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-menu-alt"></i><span>Solicitudes Vacaciones</span></a>
+                                <ul class="collapse">
+                                    @{if (Context.Session.GetString("ADMIN") != null)
+                                    {
+                                        <li><a asp-area="" asp-controller="SolicitudVacaciones" asp-action="ConsultarSolicitudes">Solicitudes de Empleados</a></li>
+                                    }
+                                    }
+                                    <li><a asp-area="" asp-controller="SolicitudVacaciones" asp-action="MisSolicitudes">Mis Solicitudes</a></li>
+                                    <li><a asp-area="" asp-controller="SolicitudVacaciones" asp-action="AgregarSolicitud">Agregar Solicitud</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                 </div>
