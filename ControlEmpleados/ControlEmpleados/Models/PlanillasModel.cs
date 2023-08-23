@@ -102,5 +102,25 @@ namespace ControlEmpleados.Models
             }
         }
 
+        //Nuevo
+
+        public List<ConsultarPlanillas>? ConsultarPlanillasEmpleado(int id)
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Planillas/ConsultarPlanillasEmpleado" + "?id=" + id;
+
+                HttpResponseMessage response = client.GetAsync(urlApi).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<List<ConsultarPlanillas>>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return new List<ConsultarPlanillas>();
+            }
+        }
+
     }
 }

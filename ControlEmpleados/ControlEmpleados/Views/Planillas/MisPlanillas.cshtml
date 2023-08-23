@@ -41,10 +41,6 @@
                                 @*<td class="text-center">@item.DEDUCCIONES</td>*@
                                 @*<td class="text-center">@item.SALARIO_NETO</td>*@
                                 <td>
-                                    <a onclick="agregarPlanilla(@item.ID_PLANILLA)">
-                                        <i class="fa-solid fa-pencil fa-1x custom-icon-color"></i>
-
-                                    </a>
                                     <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalDetalle@(item.ID_PLANILLA)" style=" margin-left: 15px;color: white;">
                                         Detalle
                                     </button>
@@ -69,9 +65,9 @@
                                             <p id="idEmpleado">ID Empleado: @item.ID_EMPLEADO</p>
                                             <p id="nombreCompleto">Nombre Completo: @item.NOMBRE @item.PRIMER_APELLIDO @item.SEGUNDO_APELLIDO</p>
                                             <p id="horasExtras">Horas Extras: @item.HORAS_EXTRAS</p>
-                                            <p id ="deducciones">Deducciones: @item.DEDUCCIONES</p>
-                                            <p id ="pagoporHora">Pago Por Hora: @item.PAGO_POR_HORA</p>
-                                            <p id ="salarioNeto">Salario Neto: @item.SALARIO_NETO</p>
+                                            <p id="deducciones">Deducciones: @item.DEDUCCIONES</p>
+                                            <p id="pagoporHora">Pago Por Hora: @item.PAGO_POR_HORA</p>
+                                            <p id="salarioNeto">Salario Neto: @item.SALARIO_NETO</p>
                                             <!-- ... (otros detalles) ... -->
                                         </div>
                                         <div class="modal-footer">
@@ -159,7 +155,7 @@
 
         }
     }
-
+    /*
     var BtnAgregar = {
         text: 'Agregar',
         action: function (e, dt, node, config) {
@@ -200,5 +196,5 @@
             }
         });
     }
-
+    */
 </script>
