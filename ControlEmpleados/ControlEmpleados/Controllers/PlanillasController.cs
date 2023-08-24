@@ -9,9 +9,11 @@ namespace ControlEmpleados.Controllers
     public class PlanillasController : Controller
     {
         private readonly IPlanillasModel _planillasModel;
-        public PlanillasController(IPlanillasModel planillasModel)
+        private readonly IEmpleadosModel _empleadosModel;
+        public PlanillasController(IPlanillasModel planillasModel, IEmpleadosModel empleadosModel)
         {
             _planillasModel = planillasModel;
+            _empleadosModel = empleadosModel;
         }
 
         [FiltroValidarAdmin]
@@ -107,6 +109,28 @@ namespace ControlEmpleados.Controllers
             catch (Exception ex)
             {
                 return Json(null);
+            }
+        }
+
+        //Nuevo
+
+        public IActionResult MisPlanillas()
+        {
+            try
+            {
+                int idUsuario = int.Parse(HttpContext.Session.GetString("ID").ToString());
+
+                var empleado = _empleadosModel.ConsultarEmpleados2().FirstOrDefault(x => x.ID_USUARIO == idUsuario);
+
+                var idempleado = empleado.ID_EMPLEADO;
+
+
+                var datos = _planillasModel.ConsultarPlanillasEmpleado(idempleado);
+                return View(datos);
+            }
+            catch (Exception)
+            {
+                return View("Error");
             }
         }
 
