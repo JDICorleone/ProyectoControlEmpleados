@@ -13,5 +13,7 @@ namespace ControlEmpleados.Interfaces
         public int EditarEmpleado(Empleado entidad);
 
         public List<Empleado>? ConsultarEmpleados2();
+
+        public int ActualizarVacaciones(int id_empleado, int vacaciones_disponibles);
     }
 }

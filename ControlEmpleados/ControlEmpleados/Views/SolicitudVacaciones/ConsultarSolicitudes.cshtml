@@ -25,7 +25,7 @@
                             <th class="text-center">Cédula</th>
                             <th class="text-center">Vacaciones Disponibles</th>
                             <th class="text-center">Estado</th>
-                            <th class="text-center">Acciones</th>
+                            <th class="text-center" style="min-width: 150px;">Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -58,15 +58,25 @@
                                     <td class="text-center">@item.ESTADO</td>
                                 }
                                 <td>
-                                    <select >
+                                    <div class="form-group">
+                                        @{
+                                            string[] estados = { "Pendiente", "Aprobada", "Rechazada" };
+                                        }
+                                        <select onchange="cambiarEstado(@item.ID_SOLICITUD_VACACIONES,this)" class="form-control">
 
-                                        <option value="Pendiente">Pendiente</option>
-                                        <option value="Aprobada">Aprobada</option>
-                                        <option value="Rechazada">Rechazada</option>
-                                    </select>
-                                    <a onclick="cambiarEstado(@item.ID_SOLICITUD_VACACIONES)">
-                                        <i class="fa-solid fa-pencil fa-1x custom-icon-color"></i>
-                                    </a>
+                                            @foreach (var estado in estados)
+                                            {
+                                                if (estado == @item.ESTADO)
+                                                {
+                                                    <option value="@estado" selected>@estado</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="@estado">@estado</option>
+                                                }
+                                            }
+                                        </select>
+                                    </div>
                                 </td>
 
                             </tr>
@@ -128,22 +138,49 @@
     });
 
 
-    function cambiarEstado(idSolicitudVacaciones) {
+    function cambiarEstado(id_solicitud, estado) {
+        debugger;
         $.ajax({
-            type: "POST",
+            type: "PUT",
             url: "/SolicitudVacaciones/CambiarEstado",
             data: {
-                idSolicitudVacaciones: idSolicitudVacaciones
+                id_solicitud: id_solicitud,
+                estado: estado.value
             },
             cache: false,
             dataType: 'json',
             success: function (datos) {
-                
+                alertaEdit();
             },
             error: function (data) {
-
+                alertaError();
             }
         });
+    }
+
+    function alertaEdit() {
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'El estado de la solicitud de vacaciones se actualizo correctamente.',
+            showConfirmButton: true
+        })
+        setTimeout(function () {
+            window.location.href = "ConsultarSolicitudes";
+        }, 3000);
+    }
+
+    function alertaError() {
+        Swal.fire({
+            position: 'top-center',
+            icon: 'error',
+            title: 'Hubo un error al actualizar el estado de la solicitud.',
+            showCloseButton: true,
+            closeButtonText: 'Cerrar'
+        })
+        setTimeout(function () {
+            window.location.href = "ConsultarSolicitudes";
+        }, 3000);
     }
 </script>
 

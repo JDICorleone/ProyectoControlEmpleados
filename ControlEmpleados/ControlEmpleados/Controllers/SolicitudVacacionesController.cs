@@ -90,5 +90,27 @@ namespace ControlEmpleados.Controllers
                 return View("Error");
             }
         }
+
+        public ActionResult CambiarEstado(int id_solicitud, string estado)
+        {
+            try
+            {
+                var datos = _solicitudVacacionesModel.CambiarEstado(id_solicitud, estado);
+                if (estado == "Aprobada")
+                {
+                    var solicitud = _solicitudVacacionesModel.ConsultarSolicitudes2().FirstOrDefault(x => x.ID_SOLICITUD_VACACIONES == id_solicitud);
+                    var solicitudEmpleado = _solicitudVacacionesModel.ConsultarSolicitudes().FirstOrDefault(x => x.ID_SOLICITUD_VACACIONES == id_solicitud);
+
+                    int vacaciones_disponibles = solicitudEmpleado.VACACIONES_DISPONIBLES - solicitud.CANTIDAD_DIAS;
+                    var datos_empleado = _empleadosModel.ActualizarVacaciones(solicitud.ID_EMPLEADO,vacaciones_disponibles);
+                }
+                
+                return Json(datos);
+            }
+            catch (Exception ex)
+            {
+                return Json(null);
+            }
+        }
     }
 }

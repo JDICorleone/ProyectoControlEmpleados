@@ -95,5 +95,31 @@ namespace ControlEmpleados.Models
             }
         }
 
+        public int ActualizarVacaciones(int id_empleado, int vacaciones_disponibles)
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Empleados/ActualizarVacaciones";
+
+                var json = new
+                {
+                    ID_EMPLEADO = id_empleado,
+                    VACACIONES_DISPONIBLES = vacaciones_disponibles
+                };
+
+                JsonContent body = JsonContent.Create(json);
+
+                HttpResponseMessage response = client.PutAsync(urlApi, body).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<int>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return 0;
+            }
+        }
+
     }
 }
