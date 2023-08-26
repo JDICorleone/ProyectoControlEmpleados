@@ -36,6 +36,11 @@ namespace ControlEmpleados.Controllers
         {
             try
             {
+              var empleados =  _empleadosModel.ConsultarEmpleados();
+
+                ViewBag.empleados = empleados;
+
+
                 int idPlanilla = int.Parse(HttpContext.Session.GetString("idPlanillaSession").ToString());
 
                 if (idPlanilla == 0)
@@ -65,6 +70,9 @@ namespace ControlEmpleados.Controllers
             try
             {
                 //bool correoExiste = _usuariosModel.CorreoExiste(entidad);
+                var empleados = _empleadosModel.ConsultarEmpleados();
+
+                ViewBag.empleados = empleados;
 
                 int idPlanilla = int.Parse(HttpContext.Session.GetString("idPlanillaSession").ToString());
                 entidad.ID_PLANILLA = idPlanilla;

@@ -18,35 +18,56 @@
         </div>
         <div class="card-body card">
             <form method="post" asp-controller="Planillas" asp-action="AgregarPlanilla">
+                @{
+                    string fecha = Model.FECHA.ToString("yyyy-MM-dd");
+                }
                 @if (Model.ID_PLANILLA != 0)
                 {
+
                     <div class="form-group">
                         <label for="FECHA">Fecha:</label>
-                        <input type="date" class="form-control" id="FECHA" name="FECHA" value="@Model.FECHA" required>
+                        <input type="date" class="form-control" id="FECHA" name="FECHA" value="@fecha" required>
                     </div>
                 }
                 else
                 {
                     <div class="form-group">
                         <label for="FECHA">Fecha:</label>
-                        <input type="date" class="form-control" id="FECHA" name="FECHA" value="@Model.FECHA" required>
+                        <input type="date" class="form-control" id="FECHA" name="FECHA" required>
                     </div>
 
                 }
+                <style>
+                    .readonly-select {
+                        background-color: #f5f5f5; 
+                        pointer-events: none; 
+                    }
+                </style>
                 @if (Model.ID_PLANILLA != 0)
                 {
                     <div class="form-group">
-                        <label for="ID_EMPLEADO">ID de Empleado:</label>
-                        <input type="number" class="form-control" id="ID_EMPLEADO" name="ID_EMPLEADO" value="@Model.ID_EMPLEADO" required readonly>
+                        <label for="ID_EMPLEADO">Empleado:</label>
+                        <select class="form-control readonly-select" id="ID_EMPLEADO" name="ID_EMPLEADO" required readonly>
+                            @foreach (var empleado in ViewBag.empleados)
+                            {
+                                <option value="@empleado.ID_EMPLEADO" selected="@(Model.ID_EMPLEADO == empleado.ID_EMPLEADO)">@empleado.NOMBRE @empleado.PRIMER_APELLIDO @empleado.SEGUNDO_APELLIDO</option>
+                            }
+                        </select>
                     </div>
+
                 }
                 else
                 {
                     <div class="form-group">
-                        <label for="ID_EMPLEADO">ID de Empleado:</label>
-                        <input type="number" class="form-control" id="ID_EMPLEADO" name="ID_EMPLEADO" value="@Model.ID_EMPLEADO" required>
+                        <label for="ID_EMPLEADO">Empleado:</label>
+                        <select class="form-control" id="ID_EMPLEADO" name="ID_EMPLEADO" required>
+                            <option value="">Seleccione</option>
+                            @foreach (var empleado in ViewBag.empleados)
+                            {
+                                <option value="@empleado.ID_EMPLEADO">@empleado.NOMBRE @empleado.PRIMER_APELLIDO @empleado.SEGUNDO_APELLIDO</option>
+                            }
+                        </select>
                     </div>
-
                 }
                 @if (Model.ID_PLANILLA != 0)
                 {

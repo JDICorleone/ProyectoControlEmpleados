@@ -34,7 +34,7 @@
 
                             <tr>
                                 <td class="text-center">@item.ID_PLANILLA</td>
-                                <td class="text-center">@item.FECHA</td>
+                                <td class="text-center">@item.FECHA.ToString("dd/MM/yyyy")</td>
                                 <td class="text-center">@item.ID_EMPLEADO</td>
                                 <td class="text-center">@item.NOMBRE @item.PRIMER_APELLIDO @item.SEGUNDO_APELLIDO</td>
                                 @*<td class="text-center">@item.HORAS_EXTRAS</td>*@
@@ -65,7 +65,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <!-- Agrega aquí los detalles específicos de la planilla -->
-                                            <p id="fecha">Fecha: @item.FECHA</p>
+                                            <p id="fecha">Fecha: @item.FECHA.ToString("dd/MM/yyyy")</p>
                                             <p id="idEmpleado">ID Empleado: @item.ID_EMPLEADO</p>
                                             <p id="nombreCompleto">Nombre Completo: @item.NOMBRE @item.PRIMER_APELLIDO @item.SEGUNDO_APELLIDO</p>
                                             <p id="horasExtras">Horas Extras: @item.HORAS_EXTRAS</p>

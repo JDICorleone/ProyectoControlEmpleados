@@ -84,7 +84,7 @@ namespace ControlEmpleados.Controllers
                     }
                     else
                     {
-                        ViewBag.mensaje = "No se encontró un empleado correspondiente al correo ingresado.";
+                        ViewBag.mensaje = "ERROR";
                         return View();
                     }
                 }
