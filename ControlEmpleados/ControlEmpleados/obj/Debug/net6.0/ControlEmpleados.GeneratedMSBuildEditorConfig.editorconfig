@@ -36,8 +36,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/Planilla/ConsultarPlanillas.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmlsbGFcQ29uc3VsdGFyUGxhbmlsbGFzLmNzaHRtbA==
+[C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/Planillas/AgregarPlanilla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmlsbGFzXEFncmVnYXJQbGFuaWxsYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/Planillas/ConsultarPlanillas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmlsbGFzXENvbnN1bHRhclBsYW5pbGxhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/Planillas/MisPlanillas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmlsbGFzXE1pc1BsYW5pbGxhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/Puestos/AgregarPuesto.cshtml]
@@ -54,6 +62,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/SolicitudVacaciones/AgregarSolicitud.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdHVkVmFjYWNpb25lc1xBZ3JlZ2FyU29saWNpdHVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/SolicitudVacaciones/ConsultarSolicitudes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdHVkVmFjYWNpb25lc1xDb25zdWx0YXJTb2xpY2l0dWRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/SolicitudVacaciones/MisSolicitudes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdHVkVmFjYWNpb25lc1xNaXNTb2xpY2l0dWRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Y3IK0/Documents/GitHub/ProyectoControlEmpleados/ControlEmpleados/ControlEmpleados/Views/Usuarios/AgregarUsuario.cshtml]

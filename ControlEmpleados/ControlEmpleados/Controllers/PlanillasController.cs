@@ -9,9 +9,11 @@ namespace ControlEmpleados.Controllers
     public class PlanillasController : Controller
     {
         private readonly IPlanillasModel _planillasModel;
-        public PlanillasController(IPlanillasModel planillasModel)
+        private readonly IEmpleadosModel _empleadosModel;
+        public PlanillasController(IPlanillasModel planillasModel, IEmpleadosModel empleadosModel)
         {
             _planillasModel = planillasModel;
+            _empleadosModel = empleadosModel;
         }
 
         [FiltroValidarAdmin]
@@ -27,13 +29,34 @@ namespace ControlEmpleados.Controllers
                 return View("Error");
             }
         }
+
         [HttpGet]
         [FiltroValidarAdmin]
         public IActionResult AgregarPlanilla()
         {
             try
             {
-                return View();
+              var empleados =  _empleadosModel.ConsultarEmpleados();
+
+                ViewBag.empleados = empleados;
+
+
+                int idPlanilla = int.Parse(HttpContext.Session.GetString("idPlanillaSession").ToString());
+
+                if (idPlanilla == 0)
+                {
+
+                    var entidad = new Planilla();
+
+                    return View(entidad);
+                }
+                else
+                {
+                    var planilla = _planillasModel.ConsultarPlanillas2().FirstOrDefault(x => x.ID_PLANILLA == idPlanilla);
+
+
+                    return View(planilla);
+                }
             }
             catch (Exception ex)
             {
@@ -46,19 +69,37 @@ namespace ControlEmpleados.Controllers
         {
             try
             {
-                entidad.ID_PLANILLA = 0;
+                //bool correoExiste = _usuariosModel.CorreoExiste(entidad);
+                var empleados = _empleadosModel.ConsultarEmpleados();
 
-                var resultado = _planillasModel.AgregarPlanilla(entidad);
+                ViewBag.empleados = empleados;
 
-                if (resultado > 0)
+                int idPlanilla = int.Parse(HttpContext.Session.GetString("idPlanillaSession").ToString());
+                entidad.ID_PLANILLA = idPlanilla;
+
+                if (idPlanilla == 0)
                 {
-                    ViewBag.mensaje = "OK";
-                    return View();
-                }
+                        var resultado = _planillasModel.AgregarPlanilla(entidad);
+                        if (resultado > 0)
+                        {
+                            ViewBag.mensaje = "OK";
+                            return View(entidad);
+                        }
+                        else
+                        {
+                            ViewBag.mensaje = "ERROR";
+                            return View();
+                        }
+                    }
                 else
                 {
-                    ViewBag.mensaje = "ERROR";
-                    return View();
+                    ViewBag.mensaje = "OK.";
+
+                    var planilla = _planillasModel.ConsultarPlanillas2().FirstOrDefault(x => x.ID_PLANILLA == idPlanilla);
+
+                    _planillasModel.EditarPlanilla(entidad);
+
+                    return View(planilla);
                 }
             }
             catch (Exception ex)
@@ -66,5 +107,40 @@ namespace ControlEmpleados.Controllers
                 return View("Error");
             }
         }
+        public ActionResult CargarIngreso(int idPlanilla)
+        {
+            try
+            {
+                HttpContext.Session.SetString("idPlanillaSession", idPlanilla.ToString());
+                return Json(idPlanilla);
+            }
+            catch (Exception ex)
+            {
+                return Json(null);
+            }
+        }
+
+        //Nuevo
+
+        public IActionResult MisPlanillas()
+        {
+            try
+            {
+                int idUsuario = int.Parse(HttpContext.Session.GetString("ID").ToString());
+
+                var empleado = _empleadosModel.ConsultarEmpleados2().FirstOrDefault(x => x.ID_USUARIO == idUsuario);
+
+                var idempleado = empleado.ID_EMPLEADO;
+
+
+                var datos = _planillasModel.ConsultarPlanillasEmpleado(idempleado);
+                return View(datos);
+            }
+            catch (Exception)
+            {
+                return View("Error");
+            }
+        }
+
     }
 }

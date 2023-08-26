@@ -1,64 +1,63 @@
 ﻿using ControlEmpleados.Consults;
 using ControlEmpleados.Entities;
 using ControlEmpleados.Interfaces;
-using Microsoft.Extensions.Configuration;
-using System.Net.Http.Headers;
+using System.Net.Http.Json;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ControlEmpleados.Models
 {
-    public class EmpleadosModel : IEmpleadosModel
+    public class SolicitudVacacionesModel : ISolicitudVacacionesModel
     {
-
         private readonly IConfiguration _configuration;
         private readonly IHttpContextAccessor _contextAccessor;
 
-        public EmpleadosModel(IConfiguration configuration, IHttpContextAccessor contextAccessor)
+        public SolicitudVacacionesModel(IConfiguration configuration, IHttpContextAccessor contextAccessor)
         {
             _configuration = configuration;
             _contextAccessor = contextAccessor;
         }
 
-        public List<ConsultarEmpleados>? ConsultarEmpleados()
+        public List<ConsultarSolicitudVacaciones>? ConsultarSolicitudes()
         {
             using (var client = new HttpClient())
             {
-                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Empleados/ConsultarEmpleados";
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/SolicitudVacaciones/ConsultarSolicitudes";
 
                 HttpResponseMessage response = client.GetAsync(urlApi).Result;
 
                 if (response.IsSuccessStatusCode)
-                    return response.Content.ReadFromJsonAsync<List<ConsultarEmpleados>>().Result;
+                    return response.Content.ReadFromJsonAsync<List<ConsultarSolicitudVacaciones>>().Result;
 
                 if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
                     throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
 
-                return new List<ConsultarEmpleados>();
+                return new List<ConsultarSolicitudVacaciones>();
             }
         }
 
-        public List<Empleado>? ConsultarEmpleados2()
+        public List<Solicitud_Vacaciones>? ConsultarSolicitudes2()
         {
             using (var client = new HttpClient())
             {
-                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Empleados/ConsultarEmpleados2";
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/SolicitudVacaciones/ConsultarSolicitudes2";
 
                 HttpResponseMessage response = client.GetAsync(urlApi).Result;
 
                 if (response.IsSuccessStatusCode)
-                    return response.Content.ReadFromJsonAsync<List<Empleado>>().Result;
+                    return response.Content.ReadFromJsonAsync<List<Solicitud_Vacaciones>>().Result;
 
                 if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
                     throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
 
-                return new List<Empleado>();
+                return new List<Solicitud_Vacaciones>();
             }
         }
 
-        public int AgregarEmpleado(Empleado entidad)
+        public int AgregarSolicitud(Solicitud_Vacaciones entidad)
         {
             using (var client = new HttpClient())
             {
-                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Empleados/AgregarEmpleado";
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/SolicitudVacaciones/AgregarSolicitud";
 
 
                 JsonContent body = JsonContent.Create(entidad);
@@ -75,36 +74,34 @@ namespace ControlEmpleados.Models
             }
         }
 
-        public int EditarEmpleado(Empleado entidad)
+        public List<ConsultarSolicitudVacaciones>? ConsultarSolicitudesEmpleado(int id)
         {
             using (var client = new HttpClient())
             {
-                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Empleados/EditarEmpleado";
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/SolicitudVacaciones/ConsultarSolicitudesEmpleado"+"?id="+id;
 
-                JsonContent body = JsonContent.Create(entidad);
-
-                HttpResponseMessage response = client.PutAsync(urlApi, body).Result;
+                HttpResponseMessage response = client.GetAsync(urlApi).Result;
 
                 if (response.IsSuccessStatusCode)
-                    return response.Content.ReadFromJsonAsync<int>().Result;
+                    return response.Content.ReadFromJsonAsync<List<ConsultarSolicitudVacaciones>>().Result;
 
                 if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
                     throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
 
-                return 0;
+                return new List<ConsultarSolicitudVacaciones>();
             }
         }
 
-        public int ActualizarVacaciones(int id_empleado, int vacaciones_disponibles)
+        public int CambiarEstado(int id_solicitud, string estado)
         {
             using (var client = new HttpClient())
             {
-                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Empleados/ActualizarVacaciones";
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/SolicitudVacaciones/CambiarEstado";
 
                 var json = new
                 {
-                    ID_EMPLEADO = id_empleado,
-                    VACACIONES_DISPONIBLES = vacaciones_disponibles
+                    ID_SOLICITUD_VACACIONES = id_solicitud,
+                    ESTADO = estado
                 };
 
                 JsonContent body = JsonContent.Create(json);
@@ -121,5 +118,9 @@ namespace ControlEmpleados.Models
             }
         }
 
+        public int cantidadVacaciones(DateTime FECHA_INICIO, DateTime FECHA_FINAL) {
+            int dias = (FECHA_FINAL - FECHA_INICIO).Days + 1;
+            return dias;
+        }
     }
 }

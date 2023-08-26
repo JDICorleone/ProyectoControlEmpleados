@@ -52,5 +52,25 @@ namespace ControlEmpleados.Models
                 return 0;
             }
         }
+
+        public int EditarPuesto(Puestos entidad)
+        {
+            using (var client = new HttpClient())
+            {
+                string urlApi = _configuration.GetSection("Parametros:urlApi").Value + "/Puestos/EditarPuesto";
+
+                JsonContent body = JsonContent.Create(entidad);
+
+                HttpResponseMessage response = client.PutAsync(urlApi, body).Result;
+
+                if (response.IsSuccessStatusCode)
+                    return response.Content.ReadFromJsonAsync<int>().Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    throw new Exception("Excepción Web Api: " + response.Content.ReadAsStringAsync().Result);
+
+                return 0;
+            }
+        }
     }
 }
